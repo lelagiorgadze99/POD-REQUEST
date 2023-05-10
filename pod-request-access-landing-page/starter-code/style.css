@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+:root {
+  --lightgreen: #54e6af;
+  --white: #ffffff;
+  --grey: #c2cbe5;
+  --black: #121725;
+}
+body {
+  padding: 6.2rem 2.4rem 9.4rem 2.4rem;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/mobile/image-host.jpg);
+  background-clip: border-box;
+  background-size: cover;
+  /* background-color: #121725e0; */
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  font-family: "Chivo", sans-serif;
+  text-align: center;
+}
+.title {
+  margin-top: 5.7rem;
+  color: var(--lightgreen);
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 3.8rem;
+  text-transform: uppercase;
+}
+.subtitle {
+  color: var(--white);
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+p {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+}
+.icons-div {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+.spotify {
+  height: 1.7rem;
+  width: 5.6rem;
+}
+.apple {
+  height: 1.7rem;
+  width: 4.5rem;
+}
+.google {
+  height: 1.1rem;
+  width: 7.3rem;
+}
+.pocket {
+  height: 1.5rem;
+  width: 7.7rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  position: relative;
+}
+#btn,
+#email-input {
+  border: none;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  border-radius: 2.8rem;
+  font-family: "Chivo", sans-serif;
+}
+input {
+  color: var(--white);
+  padding: 0.9rem 5rem 0.9rem 3.2rem;
+  background-color: var(--black);
+  width: 32.7rem;
+}
+#btn {
+  color: var(--black);
+  background-color: var(--lightgreen);
+  padding: 0.9em 10.9rem;
+  cursor: pointer;
+}
+#error{
+  font-size: 1.2rem;
+  color: red;
+  line-height: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+  display: none;
+}
+@media (min-width: 768px) {
+  body {
+    background: var(--black);
+    padding: 0;
+    display: block;
+  }
+  .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(./assets/tablet/image-host.jpg);
+    width: 49rem;
+    height: 76rem;
+    z-index: -1;
+  }
+  .header {
+    display: flex;
+  }
+  .title {
+    margin: 0;
+  }
+  .title,
+  .subtitle {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+  }
+  .main {
+    background-color: black;
+    margin-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    padding-top: 9rem;
+    padding-bottom: 6rem;
+    margin-left: 3.9rem;
+    margin-right: 9.4rem;
+    margin-bottom: 15rem;
+  }
+  p {
+    margin-right: 19rem;
+    margin-top: 3.1rem;
+    margin-bottom: 4rem;
+  }
+  .icons-div {
+    order: 9;
+    margin-top: 7rem;
+  }
+  
+  #btn {
+    padding: 0.9rem 2.7rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .background2 {
+    background: url(./assets/desktop/bg-pattern-dots.svg);
+    width: 23.2rem;
+    height: 10.4rem;
+    bottom: -15rem;
+    margin-left: 3rem;
+  }
+  .logo{
+    margin-top: 5rem;
+    margin-left: 3.9rem;
+  }
+}
+@media (min-width: 1440px){
+    body{
+        padding-left: 16.5rem;
+    }
+    .header{
+        padding-top: 10.2rem;
+    }
+    .logo{
+        margin: 0;
+    }
+    .background{
+        background-image: url(./assets/desktop/image-host.jpg);
+        top: 13rem;
+        width: 96.2rem;
+        height: 64rem;
+    }
+    .background2{
+        background-image: url(./assets/desktop/bg-pattern-dots.svg);
+        bottom: 30rem;
+        position: absolute;
+        right: -6rem;
+        margin: 0;
+    }
+    .main{
+        padding-top: 8.8rem;
+        margin-top: 11rem;
+        /* margin-bottom: 13rem; */
+        margin-right: 55.2rem;
+    }
+    .title{
+        font-size: 5.2rem;
+        line-height: 6.2rem;
+    }
+    p{
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin-top: 2.4rem;
+        width: 44.5rem;
+    }
+    .icons-div{
+        column-gap: 4rem;
+        margin-top: 6.4rem;
+    }
+    input{
+        width: 42.7rem;
+    }
+    
+}
